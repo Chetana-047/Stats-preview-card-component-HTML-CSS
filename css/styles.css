@@ -1,0 +1,145 @@
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+        /*color*/
+        
+         :root {
+            /* (main background) */
+            --Very-dark-blue: hsl(233, 47%, 7%);
+            /* (card background) */
+            --Dark-desaturated-blue: hsl(244, 38%, 16%);
+            /* (accent) */
+            --Soft-violet: hsl(277, 64%, 61%);
+            --Soft-violet-transparent: hsla(277, 64%, 61%, 0.6);
+            /* (main heading, stats) */
+            --White: hsl(0, 0%, 100%);
+            /* (main paragraph) */
+            --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+            /* (stat headings) */
+            --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+        }
+        
+        .text-soft-violet-color {
+            color: var(--Soft-violet);
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            background-color: var(--Very-dark-blue);
+            color: #fff;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 6rem auto;
+            border-radius: 15px;
+        }
+        
+        .container .card {
+            background-color: var(--Dark-desaturated-blue);
+            display: flex;
+            margin: 0 auto;
+            height: 450px;
+            width: 80%;
+            border-radius: 15px;
+        }
+        
+        .container .card .column {
+            width: 50%;
+        }
+        
+        .container .card .column .content {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            height: 100%;
+            margin: 0 auto;
+        }
+        
+        .content h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .content p {
+            font-size: 1rem;
+            margin-bottom: 4rem;
+            color: var(--Slightly-transparent-white);
+        }
+        
+        .content h1+p {
+            text-align: left;
+        }
+        
+        .content ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .content ul li {
+            list-style: none;
+        }
+        
+        .content ul li p {
+            padding-right: 10px;
+            margin-bottom: 0;
+        }
+        
+        .container .card .column .card-img {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        /*incase of img*/
+        
+        .container .card .column .card-img img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            filter: opacity(0.3) drop-shadow(0 0 0 var(--Soft-violet));
+            border-radius: 0 15px 15px 0;
+        }
+        
+        .attribution {
+            text-align: center;
+        }
+        
+        @media (max-width:930px) {
+            .container .card {
+                flex-direction: column-reverse;
+                height: 100%;
+            }
+            .container .card .column {
+                width: 100%;
+            }
+            .container .card .column .card-img img {
+                border-radius: 15px 15px 0 0;
+            }
+            .container .card .column .content {
+                text-align: center;
+                align-items: center;
+            }
+            .content h1+p {
+                text-align: center;
+            }
+            .content ul {
+                flex-direction: column;
+            }
+            .content ul li {
+                margin-bottom: 30px;
+            }
+            .content ul li p {
+                padding-right: 0;
+            }
+        }
