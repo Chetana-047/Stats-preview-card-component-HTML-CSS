@@ -129,6 +129,11 @@ font-family: 'Lexend Deca', sans-serif; */
             .container .card .column .content {
                 text-align: center;
                 align-items: center;
+                padding: 2rem;
+            }
+            .content h1 {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
             }
             .content h1+p {
                 text-align: center;
