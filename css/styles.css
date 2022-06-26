@@ -1,4 +1,4 @@
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+               @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
         * {
             margin: 0;
             padding: 0;
@@ -36,20 +36,21 @@ font-family: 'Lexend Deca', sans-serif; */
         }
         
         .container {
-            display: flex;
+            /* display: flex;
             justify-content: center;
             align-items: center;
             margin: 6rem auto;
-            border-radius: 15px;
+            border-radius: 15px; */
+            padding: 50px 0;
         }
         
         .container .card {
             background-color: var(--Dark-desaturated-blue);
             display: flex;
             margin: 0 auto;
-            height: 450px;
+            height: 550px;
             width: 80%;
-            border-radius: 15px;
+            border-radius: 10px;
         }
         
         .container .card .column {
@@ -108,7 +109,7 @@ font-family: 'Lexend Deca', sans-serif; */
             width: 100%;
             object-fit: cover;
             filter: opacity(0.3) drop-shadow(0 0 0 var(--Soft-violet));
-            border-radius: 0 15px 15px 0;
+            border-radius: 0 10px 10px 0;
         }
         
         .attribution {
@@ -124,7 +125,7 @@ font-family: 'Lexend Deca', sans-serif; */
                 width: 100%;
             }
             .container .card .column .card-img img {
-                border-radius: 15px 15px 0 0;
+                border-radius: 10px 10px 0 0;
             }
             .container .card .column .content {
                 text-align: center;
