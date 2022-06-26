@@ -50,7 +50,7 @@ font-family: 'Lexend Deca', sans-serif; */
             margin: 0 auto;
             height: 550px;
             width: 80%;
-            border-radius: 10px;
+            border-radius: 8px;
         }
         
         .container .card .column {
@@ -109,7 +109,7 @@ font-family: 'Lexend Deca', sans-serif; */
             width: 100%;
             object-fit: cover;
             filter: opacity(0.3) drop-shadow(0 0 0 var(--Soft-violet));
-            border-radius: 0 10px 10px 0;
+            border-radius: 0 8px 8px 0;
         }
         
         .attribution {
@@ -125,7 +125,7 @@ font-family: 'Lexend Deca', sans-serif; */
                 width: 100%;
             }
             .container .card .column .card-img img {
-                border-radius: 10px 10px 0 0;
+                border-radius: 8px 8px 0 0;
             }
             .container .card .column .content {
                 text-align: center;
